@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="library.xsl"?>
+
+<!DOCTYPE library SYSTEM "library.dtd">
+
+<library>
+    <book>
+        <title>Data Structures</title>
+        <author>Mark Allen</author>
+        <price>450</price>
+    </book>
+
+    <book>
+        <title>Computer Networks</title>
+        <author>Andrew Tanenbaum</author>
+        <price>550</price>
+    </book>
+</library>
