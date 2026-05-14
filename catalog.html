@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Catalog</title>
+  <link rel="stylesheet" href="style1.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <!-- 🔝 Navbar -->
+  <div class="navbar">
+    <h2 class="logo">ShopEasy</h2>
+
+    <div class="nav-right">
+      <input type="text" placeholder="Search..." class="search">
+      <span class="wishlist">❤️</span>
+      <a href="cart.html" class="cart-btn">Cart 🛒</a>
+    </div>
+  </div>
+
+  <!-- 🛒 Catalog -->
+  <div class="products">
+
+      <div class="card" data-name="Product 1" data-price="500" data-img="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400">
+        <h3>Product 1</h3>
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400" class="product-img">
+        <p>₹500</p>
+        <button class="btn add-cart">Add to Cart</button>
+      </div>
+
+      <div class="card" data-name="Product 2" data-price="800" data-img="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=400">
+        <h3>Product 2</h3>
+        <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=400" class="product-img">
+        <p>₹800</p>
+        <button class="btn add-cart">Add to Cart</button>
+      </div>
+
+      <!-- Add more products similarly -->
+
+  </div>
+
+  <!-- LINK TO EXTERNAL JS -->
+  <script src="catalog.js"></script>
+</body>
+</html>
