@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<h3>Weather Graph</h3>
+<canvas id="c"></canvas>
+<script>
+const key = "893a14f660f1231ca00d6d5864ba219e";
+fetch("https://api.openweathermap.org/data/2.5/forecast?q=Hyderabad&appid=" + key + "&units=metric")
+.then(res => res.json())
+.then(d => {
+    let t = d.list.slice(0,5).map(x => x.main.temp);
+    let l = d.list.slice(0,5).map(x => x.dt_txt);
+    new Chart(document.getElementById("c"), {
+        type: "line",
+        data: {
+            labels: l,
+            datasets: [{ data: t, label: "Temp" }]
+        }
+    });
+});
+</script>
+</body>
+</html>
