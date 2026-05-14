@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="books.xsl"?>
+
+<bookstore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="books.xsd">
+
+    <book>
+        <title>Java Programming</title>
+        <author>James Gosling</author>
+        <price>500</price>
+    </book>
+
+    <book>
+        <title>Web Development</title>
+        <author>Tim Berners-Lee</author>
+        <price>650</price>
+    </book>
+
+</bookstore>
